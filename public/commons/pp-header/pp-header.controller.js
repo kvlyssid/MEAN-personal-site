@@ -1,16 +1,15 @@
-(function(){
-	angular.module('personal-portal').controller('HeaderController',HeaderController);
+(function () {
+	angular.module('personal-portal').controller('HeaderController', HeaderController);
 
-	HeaderController.$inject=[];
+	HeaderController.$inject = [];
 
-	function HeaderController(){
+	function HeaderController() {
 		var ctrl = this;
 		ctrl.name = undefined;
 
-
 		ctrl.$onInit = initializeController();
 
-		function initializeController(){
+		function initializeController() {
 			//TODO replace with call to backend
 			ctrl.name = "Konstantinos Vlyssidis";
 		}
