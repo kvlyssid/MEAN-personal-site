@@ -5,10 +5,12 @@
   "main": "app.js",
   "private": true,
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "install" : "bower install"
   },
   "author": "kvlyssid",
-  "dependencies": {
-    "express":"4.14.0"
+  "devDependencies": {
+    "express":"4.14.0",
+    "bower" : "1.7.9"
   }
 }
