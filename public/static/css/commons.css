@@ -24,3 +24,14 @@
 .header .menu-icon{
 	font-size:4vmax;
 }
+
+.footer {
+	height:100%; 
+	text-align:center;
+}
+
+.footer #text{
+	font-weight: 200;
+	font-style: italic;
+	font-size: 0.8vmax
+}
