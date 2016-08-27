@@ -1,0 +1,45 @@
+.home{
+	min-height:90vh;
+}
+
+.pp-menu{
+	height:100%;
+}
+
+.pp-menu .button-container{
+	text-align:center;
+	color:grey;
+}
+
+.pp-menu #right-divider {
+	margin-right:80px;
+}
+
+.header{
+	height:100%;
+}
+
+.header .title {
+	font-family: 'Poiret One', cursive; 
+	font-size:4vmax; 
+	text-align:center;
+}
+
+.header .menu-container{
+	text-align:right;
+}
+
+.header .menu-icon{
+	font-size:4vmax;
+}
+
+.footer {
+	height:100%; 
+	text-align:center;
+}
+
+.footer #text{
+	font-weight: 200;
+	font-style: italic;
+	font-size: 0.8vmax
+}
