@@ -1,17 +1,18 @@
-(function(){
-	angular.module('personal-portal').controller('FooterController',FooterController);
+(function () {
+	angular.module('personal-portal').controller('FooterController', FooterController);
 
-	function FooterController(){
+	function FooterController() {
 		var ctrl = this;
+		var currentDate = new Date();
+		const YEAR_OF_CREATION = 2016;
 
 		ctrl.getYears = getYears;
 
-		function getYears(){
-			let currentDate = new Date();
-			if(currentDate.getFullYear()===2016){
-				return 2016;
-			}
-			return "2016 - "+ currentDate.getFullYear;
+		function getYears() {
+			var presentYear = currentDate.getFullYear();
+			var copyrightYears = (presentYear === YEAR_OF_CREATION) ?
+				YEAR_OF_CREATION : YEAR_OF_CREATION + " - " + presentYear;
+			return copyrightYears;
 		}
 	}
 })();
