@@ -1,8 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var personsDAO = require("../dataaccess/personsDAO.js");
 
 router.get('/',function(req,res){
-	res.status(200).json({name:"Konstantinos Vlyssidis"});
+	personsDAO.getLatest().then(function(result){
+		res.json(result[0]);
+	});
 })
 
 module.exports = router;
