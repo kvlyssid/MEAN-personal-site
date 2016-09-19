@@ -1,17 +1,18 @@
 (function () {
 	angular.module('personal-portal').controller('HeaderController', HeaderController);
 
-	HeaderController.$inject = [];
+	HeaderController.$inject = ['PersonDetailsService'];
 
-	function HeaderController() {
+	function HeaderController(PersonDetailsService) {
 		var ctrl = this;
 		ctrl.name = undefined;
 
 		ctrl.$onInit = initializeController();
 
 		function initializeController() {
-			//TODO replace with call to backend
-			ctrl.name = "Konstantinos Vlyssidis";
+			PersonDetailsService.getName().then(function(name){
+				ctrl.name = name;
+			})
 		}
 
 	}

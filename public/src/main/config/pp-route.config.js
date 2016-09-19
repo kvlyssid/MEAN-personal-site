@@ -12,6 +12,12 @@
             controllerAs: 'homeCtrl'
         });
 
+        $routeProvider.when('/resume', {
+            templateUrl: 'resume/pp-resume.html',
+            controller: 'ResumeController',
+            controllerAs: 'resumeCtrl'
+        });
+
         $routeProvider.otherwise({
             redirectTo: '/home'
         });
