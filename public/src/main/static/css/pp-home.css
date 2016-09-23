@@ -1,3 +1,7 @@
+.pp-home-main{
+	min-height:70vh;
+}
+
 .pp-home-main .profile-pic-container{
 	text-align:center;
 }

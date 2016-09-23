@@ -17,6 +17,7 @@
     "karma-jasmine": "1.0.2",
     "karma-phantomjs-launcher": "1.0.1",
     "phantomjs-prebuilt": "2.1.12",
-    "mongodb": "2.2.5"
+    "mongodb": "2.2.5",
+    "jsonfile": "2.3.1"
   }
 }
